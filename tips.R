@@ -8,6 +8,9 @@ fileNames <- Sys.glob("*.csv")
 
 #Print cat output
 cat(paste("Line 1","Line 2",sep="\n"))
+#write file in different lines for each cell (still has " ")
+write.table(x = seq_file, file = "seq_file.tsv",row.names = F,col.names = F, sep = "\n")
+
 
 #Excel
 #install.packages("tidyverse")
