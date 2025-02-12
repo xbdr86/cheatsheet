@@ -8,8 +8,9 @@ fileNames <- Sys.glob("*.csv")
 
 #Print cat output
 cat(paste("Line 1","Line 2",sep="\n"))
-#write file in different lines for each cell (still has " ")
-write.table(x = seq_file, file = "seq_file.tsv",row.names = F,col.names = F, sep = "\n")
+#write file in different lines for each cell as a fasta
+write.table(x = fasta_B1, file = "fasta_B1.fa",row.names = F,col.names = F, sep = "\n", quote=FALSE)
+
 
 
 #Excel
